@@ -1,0 +1,125 @@
+
+
+    <a type="button" style="color: #419fce;" class="nav-link active" aria-current="page" href="/empleados">Empleados</a>
+
+  <h4> Formulario</h4>
+  
+  <div class="card">
+      <div class="card-body">
+          <b>
+              Formulario
+          </b>
+          <hr style="color: green; width: 95%; height: 3px;">
+  
+          <div class="row">
+  
+              <label class="form-check-label" for="defaultCheck1">
+                  Por favor complete los siguientes campos
+              </label>
+              <br><br>
+              <div class="col">
+                  <label class="form-check-label" for="defaultCheck1">
+                      Nombre:
+                  </label>
+                  <input  type="text" class="form-control" placeholder="First name" [(ngModel)]="this.nombre">
+              </div>
+              <div class="col">
+                  <label class="form-check-label" for="defaultCheck1">
+                      Apellido Paterno:
+                  </label>
+                  <input type="text" class="form-control" placeholder="Last name" [(ngModel)]="this.apellidoP">
+              </div>
+              <div class="col">
+                  <label class="form-check-label" for="defaultCheck1">
+                      Apellido Materno:
+                  </label>
+                  <input type="text" class="form-control" placeholder="Last name" [(ngModel)]="this.apellidoM">
+              </div>
+          </div>
+          <br><br>
+          <div class="row">
+  
+              <div class="col">
+                  <input type="radio" value="Femenino" [(ngModel)]="this.genero">
+                  <label class="form-check-label" for="defaultCheck1">
+                      &nbsp;Femenino
+                  </label>
+              </div>
+  
+              <div class="col">
+                  <input type="radio" value="Masculino" [(ngModel)]="this.genero">
+                  <label class="form-check-label" for="defaultCheck1">
+                      &nbsp;Masculino
+                  </label>
+  
+              </div>
+  
+              <div class="col">
+                  <input class="form-control" id="date" type="date" [(ngModel)]="this.fechaNacimiento">
+              </div>
+  
+  
+  
+              <div class="col">
+  
+                  <label class="form-check-label" for="defaultCheck1">
+                      Pasatimepos:
+                  </label>
+                  <div class="form-check">
+  
+                      <input class="form-check-input" type="checkbox" value="Dibujar" [(ngModel)]="this.pasatimepos1">
+                      <label class="form-check-label" for="defaultCheck1">
+                          Dibujar
+                      </label>
+                  </div>
+                  <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="Leer"  [(ngModel)]="this.pasatimepos2">
+                      <label class="form-check-label" for="defaultCheck1">
+                          Leer
+                      </label>
+                  </div>
+  
+              </div>
+  
+              <div class="col">
+                  <br>
+                  <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="Escuchar música"  [(ngModel)]="this.pasatimepos3">
+                      <label class="form-check-label" for="defaultCheck1">
+                          Escuchar música
+                      </label>
+                  </div>
+                  <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="Ver películas"  [(ngModel)]="this.pasatimepos4">
+                      <label class="form-check-label" for="defaultCheck1">
+                          Ver películas
+                      </label>
+                  </div>
+  
+              </div>
+  
+          </div>
+  
+          <div class="row" style="margin-right: 60%;">
+  
+              <label for="formFile" class="form-label">Default file input example</label>
+              <input class="form-control" type="file" id="formFile" [(ngModel)]="this.documento">
+          </div>
+  
+          <br><br><br>
+  
+          <div class="row">
+  
+              <div class="col" style="margin-left: 40%">
+                  <button (click)="limpiar()" type="button" class="btn btn-success">
+                      Limpiar</button> &nbsp;
+                  <button (click)="limpiar()" type="button" class="btn btn-success">
+                      Guardar</button>
+              </div>
+  
+  
+          </div>
+  
+  
+      </div>  
+
